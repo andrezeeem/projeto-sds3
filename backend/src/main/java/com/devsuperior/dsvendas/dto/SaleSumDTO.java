@@ -13,11 +13,9 @@ public class SaleSumDTO implements Serializable {
 	public SaleSumDTO() {
 	}
 	
-	public SaleSumDTO(Seller seller, Double sum) {		
-	}
+	public SaleSumDTO(Seller seller, Double sum) {
 
-	public SaleSumDTO(String sellerName, Double sum) {
-		this.sellerName = sellerName;
+		this.sellerName = seller.getName();
 		this.sum = sum;
 	}
 
@@ -35,5 +33,7 @@ public class SaleSumDTO implements Serializable {
 
 	public void setSum(Double sum) {
 		this.sum = sum;
-	}	
+	}
+
+
 }
