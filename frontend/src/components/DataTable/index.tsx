@@ -20,7 +20,7 @@ const DataTable = () => {
             .then(response => {
                 setPage(response.data);
             });
-    });
+    }, []);
 
     return (
         <div className="table-responsive">
